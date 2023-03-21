@@ -2,7 +2,6 @@ name: auto-tag-product-suite
 on:
     push:
         branches: ['release', 'main']
-    workflow_dispatch:
 jobs:
     build:
         runs-on: ubuntu-latest
