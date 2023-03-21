@@ -1,0 +1,11 @@
+name: auto-tag-product-suite
+on:
+    push:
+        branches: ['release', 'main']
+    workflow_dispatch:
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+            - uses: steppay/github-auto-tag-product-suite@v1
